@@ -1,3 +1,7 @@
+voici le lien du site: https://x849kl-3000.csb.app/
+
+
+Pour commencer: npm install react react-dom 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
