@@ -8,16 +8,17 @@ import Collapse from '../../components/Collapse/collapse'
 
 function Logement () {
   //récuprération des données
-  const data = require("../../logements.json")
+  const data = require("../../logements.json") // chargement du fichier avec 'require'variable data > données
   //identification du logment selectionné par id
-    function getLogementWithId (data, logementId) {
-      for (let logement of data) {
-        if (logement.id === logementId) { 
+    function getLogementWithId (data, logementId) {  //'getLogementWithId' > données 'data' >'logementId'
+      for (let logement of data) {  
+        if (logement.id === logementId) {   
         return logement
     }}}
     
-  const {logementId} = useParams()
-  const logement = getLogementWithId(data, logementId)
+  const {logementId} = useParams()// 'useParams' = 'logementId' depuis l'url, composant le bon ID et son URL
+  const logement = getLogementWithId(data, logementId)  // 
+  const logement = getLogementWithId(data, logementId)  // 
 
 //si logement existant retourne la fiche logement
   return(
@@ -69,8 +70,8 @@ function Logement () {
         </div>
             
       </section>   
-//si logement inexistant retourne page error
-      ) : <Navigate replace to="../../components/Error"/> }
+//si logement inexistant retourne page error   
+      ) : <Navigate replace to="../../components/Error"/> }  
     </main>
       )
 }
