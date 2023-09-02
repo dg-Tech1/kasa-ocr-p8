@@ -6,8 +6,8 @@ import '../../utils/style/Loader.css'
 import './LocationList.css'
 
 //appel APi pour les datas avec UseFetch et du loader inclus
-export default function LocationList() {
-  const { data, isLoading, error } = useFetch(`/logements.json`)
+export default function LocationList() {   // composant fonctionnel 
+  const { data, isLoading, error } = useFetch(`/logements.json`) // 'useFetch' {hook}  > données, sinon msg erreur
   if (error) {
     return <pre>{error}</pre>
   }
