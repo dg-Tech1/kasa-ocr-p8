@@ -18,7 +18,7 @@ function Logement () {
     
   const {logementId} = useParams()// 'useParams' = 'logementId' depuis l'url, composant le bon ID et son URL
   const logement = getLogementWithId(data, logementId)  // 
-  const logement = getLogementWithId(data, logementId)  // 
+
 
 //si logement existant retourne la fiche logement
   return(
