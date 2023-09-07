@@ -60,6 +60,7 @@
 .carousel_Index{
     font-size: 12px;
     bottom: 6px;
+    display: none; /* Masquer l'index sur les écrans */
 }    
 }
   
